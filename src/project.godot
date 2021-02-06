@@ -33,8 +33,9 @@ click={
 
 [layer_names]
 
-2d_physics/layer_1="player"
-2d_physics/layer_2="world"
+2d_physics/layer_1="world"
+2d_physics/layer_2="follow_agent"
+2d_physics/layer_3="arrive_to_agent"
 
 [rendering]
 

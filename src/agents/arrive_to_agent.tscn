@@ -7,7 +7,7 @@
 radius = 26.0
 
 [node name="ArriveToAgent" type="KinematicBody2D"]
-collision_mask = 2
+collision_layer = 4
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
