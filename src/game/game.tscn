@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://objects/circle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://game/graph-paper.svg" type="Texture" id=2]
 [ext_resource path="res://agents/follow_agent.tscn" type="PackedScene" id=3]
+[ext_resource path="res://agents/arrive_to_agent.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Node2D"]
 
 [node name="FollowAgent" parent="." instance=ExtResource( 3 )]
+
+[node name="ArriveToAgent" parent="." instance=ExtResource( 4 )]
 
 [node name="Circle" parent="." instance=ExtResource( 1 )]
 position = Vector2( 765, 327 )
