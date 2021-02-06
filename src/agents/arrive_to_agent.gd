@@ -11,6 +11,10 @@ var _velocity := Vector2.ZERO
 var _target_global_pos := Vector2.ZERO
 
 
+func _ready() -> void:
+	set_physics_process(false)
+
+
 func _physics_process(_delta: float) -> void:
 	if global_position.distance_to(_target_global_pos) <= DISTANCE_THESHOLD:
 		set_physics_process(false)
